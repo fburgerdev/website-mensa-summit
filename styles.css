@@ -434,6 +434,8 @@ a.org:hover { color: var(--bg); transform: rotate(-1deg) translateY(-3px); }
   .section .swipe-hint { display: block; font-size: .8rem; color: var(--muted); margin-top: .2rem; }
 
   .panel-mint { transform: none; }
+  .orga .tag-big { font-size: 1.02rem; padding: .4em .7em; }
+  .homestay-art { max-width: 230px; }
   .timeline { margin-top: 1.8rem; }
   .tl-date { align-self: start; padding: .8rem .3rem; }
   .tl-mint .tl-date, .tl-pink .tl-date { transform: none; }
