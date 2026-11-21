@@ -4,8 +4,14 @@
  * Leave a value as "" to fall back to a prepared mail to `contactMail`.
  */
 window.SUMMIT_CONFIG = {
-  // Contact address for everything. TODO: confirm with the orga team (published address of MENSArevolution).
+  // Contact address for everything.
   contactMail: "info@mensarevolution.de",
+
+  // Orga meetings. The page shows the first one that has not ended yet; add new ones here.
+  orgaMeetings: [
+    { date: "2026-12-07T19:00:00+01:00", label: "07. Dezember 2026 · 19 Uhr · online" },
+  ],
+  orgaMeetingFallback: "Nächster Termin folgt auf Instagram",
 
   // Registration form. Empty = "Interesse anmelden" opens a prepared mail.
   registration: "",

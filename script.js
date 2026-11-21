@@ -35,6 +35,16 @@
     if (v) el.textContent = v;
   });
 
+  // --- Next orga meeting: the first one in config.js that has not ended yet ----
+  var om = document.querySelector("[data-orga-meeting]");
+  if (om && Array.isArray(cfg.orgaMeetings)) {
+    var now = Date.now();
+    var next = cfg.orgaMeetings.filter(function (m) {
+      return new Date(m.date).getTime() + 2 * 3600 * 1000 > now;
+    })[0];
+    om.textContent = next ? next.label : (cfg.orgaMeetingFallback || "Termin folgt auf Instagram");
+  }
+
   // --- Countdown --------------------------------------------------------------
   var cd = document.querySelector(".countdown");
   if (cd) {
@@ -86,7 +96,7 @@
         }
       });
     }, { threshold: 0.12 });
-    document.querySelectorAll(".section > *, .fact-grid li").forEach(function (el) {
+    document.querySelectorAll(".section > *:not(.deco):not(.eyebrow), .fact-grid li").forEach(function (el) {
       el.classList.add("reveal");
       io.observe(el);
     });
