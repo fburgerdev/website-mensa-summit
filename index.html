@@ -1,28 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mensa Summit 2027 · Konstanz · 14.–15. Mai</title>
-  <meta name="description" content="Der Mensa Summit 2027 in Konstanz: zwei Tage für Studierende aus ganz Deutschland, die ihre Mensa nachhaltiger machen wollen. Input, Best Practices, Vernetzung und konkrete Pläne für die eigene Mensa.">
+  <title>Mensa Summit 2027 · 14. &amp; 15. Mai · Konstanz</title>
+  <meta name="description" content="Der bundesweite studentische Treffpunkt für nachhaltige Mensen. 14. & 15. Mai 2027 in Konstanz: Workshops, Inputs, Vernetzung und konkrete Pläne für deine Mensa.">
   <meta property="og:title" content="Mensa Summit 2027 · Konstanz">
-  <meta property="og:description" content="14.–15. Mai 2027. Zwei Tage für nachhaltige Hochschulgastronomie: Input, Best Practices, Vernetzung und konkrete Pläne für deine Mensa.">
+  <meta property="og:description" content="Der bundesweite studentische Treffpunkt für nachhaltige Mensen. 14. & 15. Mai 2027 in Konstanz.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://fburgerdev.github.io/website-mensa-summit/">
+  <meta property="og:image" content="https://fburgerdev.github.io/website-mensa-summit/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#394b1f">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/heebo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="theme-color" content="#162b2e">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preload" href="assets/fonts/comfortaa-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- Decorative shapes, drawn after the Instagram posts -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="spoon" viewBox="0 0 40 200"><ellipse cx="20" cy="30" rx="18" ry="29"/><rect x="15" y="52" width="10" height="148" rx="5"/></symbol>
+    <symbol id="fork" viewBox="0 0 60 220"><path d="M4 0h8v60h6V0h8v60h6V0h8v60h6V0h8v70c0 14-10 22-20 24v126H24V94C14 92 4 84 4 70z"/></symbol>
+    <symbol id="knife" viewBox="0 0 40 220"><path d="M14 0c16 10 24 40 24 80 0 14-4 22-12 24v116H14z"/></symbol>
+    <symbol id="arc" viewBox="0 0 120 70"><path d="M10 0a50 50 0 0 0 100 0" fill="none" stroke="currentColor" stroke-width="22"/></symbol>
+    <symbol id="ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="24"/></symbol>
+    <symbol id="globe" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#3ae189"/><path d="M8 30c10-4 16 2 22 10s2 14 8 20-2 16-10 18C18 74 6 60 4 48 3 40 5 34 8 30zM56 8c8 0 14 6 12 12s-10 6-8 14 12 4 16 12-4 16-12 14-8-12-14-14-10 4-12-4 6-14 8-20S50 8 56 8zM74 70c6-2 12 2 10 8s-10 10-14 6 0-12 4-14z" fill="#1a7a4a"/></symbol>
+    <symbol id="leek" viewBox="0 0 60 120"><path d="M8 0l14 4-4 60H12zM30 2l12 4-16 58-6-2zM48 18l10 8-30 40-4-4z" fill="#1a7a4a"/><path d="M14 72h30L26 120z" fill="#fa9a4b"/></symbol>
+  </defs>
+</svg>
 
 <a class="skip" href="#main">Zum Inhalt springen</a>
 
 <header class="nav" id="top">
   <a class="brand" href="#top" aria-label="Mensa Summit 2027, zum Seitenanfang">
-    <span class="brand-mark" aria-hidden="true">🍽</span>
-    <span class="brand-text">Mensa<b>Summit</b><small>2027</small></span>
+    <img src="assets/logo-mensa-summit.png" alt="Mensa Summit" width="120" height="43">
   </a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
     <span></span><span></span><span></span>
@@ -30,11 +44,11 @@
   <nav id="nav-links" class="nav-links">
     <a href="#idee">Idee</a>
     <a href="#programm">Programm</a>
-    <a href="#mitmachen">Mitmachen</a>
+    <a href="#orga">Orga-Team</a>
     <a href="#homestay">Homestay</a>
     <a href="#anreise">Anreise</a>
     <a href="#faq">FAQ</a>
-    <a class="btn btn-small" href="#anmelden" data-link="registration">Dabei sein</a>
+    <a class="tag tag-mint tag-small" href="#anmelden" data-link="registration">Sei dabei :)</a>
   </nav>
 </header>
 
@@ -42,66 +56,56 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <p class="hero-kicker"><span class="sticker sticker-pink">📍 Konstanz am Bodensee</span></p>
-      <h1>
-        <span class="line">Mensa</span>
-        <span class="line line-accent">Summit</span>
-        <span class="line line-year">2027</span>
-      </h1>
-      <p class="hero-date">14.–15. Mai 2027 <span class="muted">· Anreise 13.05. · Abreise 16.05.</span></p>
-      <p class="hero-lead">Zwei Tage für alle, die ihre Mensa nachhaltiger machen wollen. Wir bringen Studierende aus ganz Deutschland zusammen, teilen, was funktioniert, und fahren mit einem konkreten Plan für die eigene Mensa nach Hause.</p>
-      <div class="hero-cta">
-        <a class="btn btn-big" href="#anmelden" data-link="registration">Jetzt dabei sein</a>
-        <a class="btn btn-ghost" href="assets/mensa-summit-2027.ics" download>📅 In den Kalender</a>
-      </div>
+    <svg class="deco d-spoon-pink" aria-hidden="true"><use href="#spoon"/></svg>
+    <svg class="deco d-fork" aria-hidden="true"><use href="#fork"/></svg>
+    <svg class="deco d-knife" aria-hidden="true"><use href="#knife"/></svg>
+    <svg class="deco d-arc-pink" aria-hidden="true"><use href="#arc"/></svg>
+    <svg class="deco d-ring" aria-hidden="true"><use href="#ring"/></svg>
+    <svg class="deco d-globe" aria-hidden="true"><use href="#globe"/></svg>
 
+    <div class="hero-inner">
+      <span class="tag tag-orange tilt-r hero-tag-1">Vernetzung</span>
+      <h1 class="hero-logo"><img src="assets/logo-mensa-summit.png" alt="Mensa Summit" width="702" height="238"></h1>
+      <p class="hero-date">14. &amp; 15. Mai 2027</p>
+      <p class="hero-place"><svg class="pin" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 0C5 0 0 5 0 12c0 9 12 20 12 20s12-11 12-20C24 5 19 0 12 0zm0 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>Konstanz</p>
+      <p class="hero-lead"><span class="m">Wir bringen</span> Studierende <span class="m">aus ganz Deutschland zusammen, die sich für</span> nachhaltige Mensen <span class="m">einsetzen.</span></p>
+      <div class="hero-cta">
+        <a class="tag tag-mint tag-big tilt-l" href="#anmelden" data-link="registration">Sei dabei :)</a>
+        <a class="btn-line" href="assets/mensa-summit-2027.ics" download>Save the Date</a>
+      </div>
       <div class="countdown" aria-live="polite" data-target="2027-05-14T09:00:00+02:00">
         <div><span data-unit="d">–</span><small>Tage</small></div>
         <div><span data-unit="h">–</span><small>Stunden</small></div>
         <div><span data-unit="m">–</span><small>Minuten</small></div>
       </div>
+      <span class="tag tag-pink tilt-l hero-tag-2">Workshops &amp; Inputs</span>
     </div>
-
-    <div class="hero-art" aria-hidden="true">
-      <div class="plate">
-        <span class="plate-emoji e1">🥦</span>
-        <span class="plate-emoji e2">🫘</span>
-        <span class="plate-emoji e3">🍅</span>
-        <span class="plate-emoji e4">🌾</span>
-        <span class="plate-emoji e5">🥕</span>
-      </div>
-      <span class="badge badge-rot">für eine<br><b>nachhaltige</b><br>Mensa</span>
-    </div>
-
-    <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,64 C180,110 360,10 540,50 C720,90 900,20 1080,48 C1260,76 1350,60 1440,40 L1440,120 L0,120 Z"/>
-    </svg>
   </section>
 
   <!-- HARD FACTS -->
   <section class="facts" aria-label="Das Wichtigste auf einen Blick">
     <ul class="fact-grid">
-      <li><span class="fact-icon">📅</span><b>14.–15. Mai 2027</b><span>Anreise 13.05., Abreise 16.05.</span></li>
-      <li><span class="fact-icon">📍</span><b>Konstanz</b><span>am Bodensee</span></li>
-      <li><span class="fact-icon">💡</span><b>Tag 1</b><span>Input, Best Practices &amp; Vernetzung</span></li>
-      <li><span class="fact-icon">🛠</span><b>Tag 2</b><span>Konkrete Pläne für deine Mensa</span></li>
-      <li><span class="fact-icon">🏠</span><b>Homestay</b><span>Übernachten bei Studis vor Ort</span></li>
-      <li><span class="fact-icon">🎉</span><b>Viel Spaß</b><span>mit Menschen, die dasselbe Ziel haben</span></li>
+      <li><b>14. &amp; 15. Mai 2027</b><span>Anreise 13.05., Abreise 16.05.</span></li>
+      <li><b>Konstanz</b><span>am Bodensee</span></li>
+      <li><b>Tag 1</b><span>Inputs, Best Practices &amp; Vernetzung</span></li>
+      <li><b>Tag 2</b><span>Konkrete Pläne für deine Mensa</span></li>
+      <li><b>Homestay</b><span>Übernachten bei Studis vor Ort</span></li>
+      <li><b>Viel Spaß</b><span>mit Menschen, die dasselbe Ziel haben</span></li>
     </ul>
   </section>
 
   <!-- IDEE -->
   <section class="section" id="idee">
+    <svg class="deco d-arc-orange" aria-hidden="true"><use href="#arc"/></svg>
     <div class="split">
       <div>
         <p class="eyebrow">Worum es geht</p>
-        <h2>Die Mensa ist der größte Esstisch jeder Hochschule.</h2>
-        <p>Jeden Tag essen dort Hunderttausende Studierende. Was auf den Tellern landet, entscheidet mit über Klima, Tiere, Flächen und Gesundheit. Und es zeigt einer ganzen Generation, was normales Essen sein kann.</p>
+        <h2>Du möchtest dich <span class="w">für eine nachhaltige Mensa</span> an deiner Hochschule <span class="w">engagieren</span>? Oder tust das schon?</h2>
+        <p>Jeden Tag essen in den Mensen Hunderttausende Studierende. Was auf den Tellern landet, entscheidet mit über Klima, Tiere, Flächen und Gesundheit. Und es zeigt einer ganzen Generation, was normales Essen sein kann.</p>
         <p>An vielen Hochschulen setzen sich Studierende schon dafür ein: in Hochschulgruppen, Green Offices, Studierendenvertretungen und Verwaltungsräten der Studierendenwerke. Oft arbeiten sie allein und fangen jedes Mal von vorn an.</p>
-        <p><b>Der Mensa Summit ändert das.</b> Zwei Tage lang lernen wir voneinander, holen uns Wissen aus Forschung und Praxis und arbeiten gemeinsam an Plänen, die zuhause wirklich umgesetzt werden.</p>
+        <p><b class="w">Der Mensa Summit ändert das.</b> Zwei Tage lang lernen wir voneinander, holen uns Wissen aus Forschung und Praxis und arbeiten gemeinsam an Plänen, die zuhause wirklich umgesetzt werden.</p>
       </div>
-      <aside class="card card-green">
+      <aside class="panel panel-mint">
         <h3>Rückenwind von oben</h3>
         <p>Das Deutsche Studierendenwerk hat sich selbst Ziele gesetzt:</p>
         <ul class="ticks">
@@ -114,22 +118,23 @@
   </section>
 
   <!-- FÜR WEN -->
-  <section class="section section-tint" id="fuer-wen">
+  <section class="section section-alt" id="fuer-wen">
     <p class="eyebrow">Für wen</p>
-    <h2>Für alle, die in ihrer Mensa etwas bewegen wollen.</h2>
+    <h2>Für alle, die in ihrer Mensa <span class="w">etwas bewegen</span> wollen.</h2>
     <div class="cards cards-4">
-      <article class="card"><span class="card-icon">🌱</span><h3>Hochschulgruppen</h3><p>Ihr macht schon Kampagnen für eure Mensa oder wollt damit anfangen.</p></article>
-      <article class="card"><span class="card-icon">🏛</span><h3>Studierendenvertretungen</h3><p>AStA, StuRa, StuPa und Referate, die Nachhaltigkeit voranbringen wollen.</p></article>
-      <article class="card"><span class="card-icon">🗝</span><h3>Gremien der Studierendenwerke</h3><p>Studentische Mitglieder in Verwaltungsrat und Vertreterversammlung.</p></article>
-      <article class="card"><span class="card-icon">♻️</span><h3>Green Offices &amp; Initiativen</h3><p>Nachhaltigkeitsbüros und alle, die an ihrer Hochschule anpacken.</p></article>
+      <article class="card"><span class="card-num">01</span><h3>Hochschulgruppen</h3><p>Ihr macht schon Kampagnen für eure Mensa oder wollt damit anfangen.</p></article>
+      <article class="card"><span class="card-num">02</span><h3>Studierenden&shy;vertretungen</h3><p>AStA, StuRa, StuPa und Referate, die Nachhaltigkeit voranbringen wollen.</p></article>
+      <article class="card"><span class="card-num">03</span><h3>Gremien der Studierenden&shy;werke</h3><p>Studentische Mitglieder in Verwaltungsrat und Vertreterversammlung.</p></article>
+      <article class="card"><span class="card-num">04</span><h3>Green Offices &amp; Initiativen</h3><p>Nachhaltigkeitsbüros und alle, die an ihrer Hochschule anpacken.</p></article>
     </div>
-    <p class="center note">Kein Vorwissen nötig. Komm allein, zu zweit oder mit deiner ganzen Gruppe.</p>
+    <p class="note">Kein Vorwissen nötig. Komm allein, zu zweit oder mit deiner ganzen Gruppe.</p>
   </section>
 
   <!-- PROGRAMM -->
   <section class="section" id="programm">
+    <svg class="deco d-leek" aria-hidden="true"><use href="#leek"/></svg>
     <p class="eyebrow">Programm</p>
-    <h2>Vier Tage Konstanz, zwei volle Summit-Tage.</h2>
+    <h2>Vier Tage Konstanz, <span class="w">zwei volle Summit-Tage.</span></h2>
     <p class="lead">Das Detailprogramm mit allen Inputs und Workshops veröffentlichen wir hier, sobald es steht.</p>
 
     <ol class="timeline">
@@ -140,10 +145,10 @@
           <p>Ankommen in Konstanz, Schlüssel bei deinem Homestay abholen, erste Leute kennenlernen.</p>
         </div>
       </li>
-      <li class="tl tl-lime">
+      <li class="tl tl-mint">
         <div class="tl-date"><b>Fr</b><span>14.05.</span></div>
         <div class="tl-body">
-          <h3>💡 Input, Best Practices &amp; Vernetzung</h3>
+          <h3>Inputs, Best Practices &amp; Vernetzung</h3>
           <ul class="chips">
             <li>Was die Forschung über pflanzliche Mensen weiß</li>
             <li>Erfolgsgeschichten aus anderen Städten</li>
@@ -155,7 +160,7 @@
       <li class="tl tl-pink">
         <div class="tl-date"><b>Sa</b><span>15.05.</span></div>
         <div class="tl-body">
-          <h3>🛠 Pläne für die eigene Mensa</h3>
+          <h3>Workshops: Pläne für die eigene Mensa</h3>
           <ul class="chips">
             <li>Ausgangslage deiner Mensa</li>
             <li>Ziele und Zwischenziele</li>
@@ -172,34 +177,48 @@
         </div>
       </li>
     </ol>
-    <p class="small muted center">Die Themen sind Beispiele dafür, was dich erwartet. Verbindlich ist das Detailprogramm.</p>
+    <p class="small muted">Die Themen sind Beispiele dafür, was dich erwartet. Verbindlich ist das Detailprogramm.</p>
+  </section>
+
+  <!-- ORGA-TEAM -->
+  <section class="section section-mint" id="orga">
+    <svg class="deco d-spoon-orange" aria-hidden="true"><use href="#spoon"/></svg>
+    <svg class="deco d-fork-dark" aria-hidden="true"><use href="#fork"/></svg>
+    <svg class="deco d-ring-2" aria-hidden="true"><use href="#ring"/></svg>
+    <div class="orga">
+      <h2 class="orga-title">Komm ins <span>Orga-Team</span></h2>
+      <p class="orga-lead">Der Summit wird von Studierenden für Studierende organisiert. Programm, Homestay, Kommunikation, Finanzen: Es gibt für alle etwas zu tun, und neue Leute sind jederzeit willkommen.</p>
+      <p class="orga-next">Nächstes Orga-Treffen</p>
+      <p class="tag tag-pink tag-big tilt-l" data-orga-meeting>07. Dezember 2026 · 19 Uhr · online</p>
+      <p><a class="tag tag-dark tilt-r" href="https://www.instagram.com/mensasummit/" target="_blank" rel="noopener">Gruppenlink in unserer Instagram-Bio</a></p>
+    </div>
   </section>
 
   <!-- MITMACHEN -->
-  <section class="section section-dark" id="mitmachen">
-    <p class="eyebrow eyebrow-light">Mitmachen</p>
-    <h2>Der Summit lebt von dir.</h2>
+  <section class="section" id="mitmachen">
+    <p class="eyebrow">Mitmachen</p>
+    <h2>Der Summit <span class="w">lebt von dir.</span></h2>
     <div class="cards cards-4">
-      <article class="card card-on-dark">
-        <span class="card-icon">🎤</span>
+      <article class="card">
+        <span class="card-num">🎤</span>
         <h3>Beitrag einreichen</h3>
         <p>Ihr habt in eurer Mensa etwas erreicht oder forscht dazu? Erzähl davon in einem Input oder Workshop.</p>
         <a class="link-arrow" href="#" data-link="submit">Idee einreichen</a>
       </article>
-      <article class="card card-on-dark">
-        <span class="card-icon">🛏</span>
+      <article class="card">
+        <span class="card-num">🛏</span>
         <h3>Schlafplatz anbieten</h3>
         <p>Du wohnst in Konstanz? Nimm für ein paar Nächte Teilnehmende bei dir auf.</p>
         <a class="link-arrow" href="#homestay">Zum Homestay</a>
       </article>
-      <article class="card card-on-dark">
-        <span class="card-icon">🙌</span>
+      <article class="card">
+        <span class="card-num">🙌</span>
         <h3>Helfen vor Ort</h3>
         <p>Begrüßung, Technik, Essen, Fotos: Wir freuen uns über jede helfende Hand.</p>
         <a class="link-arrow" href="#" data-link="helpers">Helfen</a>
       </article>
-      <article class="card card-on-dark">
-        <span class="card-icon">🤝</span>
+      <article class="card">
+        <span class="card-num">🤝</span>
         <h3>Partner werden</h3>
         <p>Ihr wollt den Summit als Organisation oder Unternehmen unterstützen? Meldet euch.</p>
         <a class="link-arrow" href="#" data-link="partners">Kontakt aufnehmen</a>
@@ -208,43 +227,44 @@
   </section>
 
   <!-- HOMESTAY -->
-  <section class="section" id="homestay">
-    <div class="split split-reverse">
+  <section class="section section-alt" id="homestay">
+    <div class="split">
       <div>
         <p class="eyebrow">Übernachtung</p>
-        <h2>Homestay: schlafen bei Studis aus Konstanz.</h2>
+        <h2>Homestay: <span class="w">schlafen bei Studis</span> aus Konstanz.</h2>
         <p>Für die Übernachtungen gibt es ein Homestay-Programm: Studierende aus Konstanz nehmen Teilnehmende bei sich auf. Persönlich, unkompliziert und der beste Weg, die Stadt kennenzulernen.</p>
         <div class="two-btn">
-          <a class="btn" href="#" data-link="homestaySeek">Ich suche einen Schlafplatz</a>
-          <a class="btn btn-ghost-dark" href="#" data-link="homestayOffer">Ich biete einen Schlafplatz</a>
+          <a class="tag tag-mint tilt-l" href="#" data-link="homestaySeek">Ich suche einen Schlafplatz</a>
+          <a class="tag tag-orange tilt-r" href="#" data-link="homestayOffer">Ich biete einen Schlafplatz</a>
         </div>
         <p class="small muted">Bring am besten Isomatte und Schlafsack mit.</p>
       </div>
       <div class="homestay-art" aria-hidden="true">
-        <span class="house">🏠</span>
-        <span class="sticker sticker-yellow">Couch frei?</span>
-        <span class="sticker sticker-mint">Isomatte ✓</span>
+        <svg class="deco-static h-globe"><use href="#globe"/></svg>
+        <span class="tag tag-pink tilt-r h-t1">Couch frei?</span>
+        <span class="tag tag-orange tilt-l h-t2">Isomatte ✓</span>
+        <svg class="deco-static h-arc"><use href="#arc"/></svg>
       </div>
     </div>
   </section>
 
   <!-- ANREISE -->
-  <section class="section section-tint" id="anreise">
+  <section class="section" id="anreise">
     <p class="eyebrow">Anreise</p>
-    <h2>Ab nach Konstanz.</h2>
+    <h2>Ab nach <span class="w">Konstanz.</span></h2>
     <div class="cards cards-3">
       <article class="card">
-        <span class="card-icon">🚆</span>
+        <span class="card-num">🚆</span>
         <h3>Mit der Bahn</h3>
         <p>Konstanz Hbf liegt direkt am See. Mit dem Deutschlandticket kommst du über Regionalzüge hin, zum Beispiel über die Schwarzwaldbahn oder über Singen.</p>
       </article>
       <article class="card">
-        <span class="card-icon">👥</span>
+        <span class="card-num">👥</span>
         <h3>Gemeinsam anreisen</h3>
         <p>Fahrt am besten zusammen aus eurer Stadt an. Wer noch Mitfahrende sucht, fragt in der Community der MENSArevolution.</p>
       </article>
       <article class="card">
-        <span class="card-icon">📍</span>
+        <span class="card-num">📍</span>
         <h3>Veranstaltungsort</h3>
         <p>Den genauen Ort in Konstanz geben wir mit dem Detailprogramm bekannt.</p>
       </article>
@@ -253,23 +273,25 @@
 
   <!-- ANMELDEN -->
   <section class="section signup" id="anmelden">
+    <svg class="deco d-globe-2" aria-hidden="true"><use href="#globe"/></svg>
+    <svg class="deco d-arc-pink-2" aria-hidden="true"><use href="#arc"/></svg>
     <div class="signup-box">
-      <p class="eyebrow">Anmeldung</p>
-      <h2>Sei dabei!</h2>
-      <p class="lead" data-text="registrationNote">Die Anmeldung öffnet bald. Trag dich ein, dann sagen wir dir Bescheid, sobald es losgeht.</p>
-      <a class="btn btn-big" href="#" data-link="registration" data-label="registrationLabel">Interesse anmelden</a>
+      <span class="tag tag-mint tilt-l">Save the Date</span>
+      <h2>Sei dabei :)</h2>
+      <p class="lead" data-text="registrationNote">Die Anmeldung öffnet bald. Schreib uns kurz, dann sagen wir dir Bescheid, sobald es losgeht.</p>
+      <a class="tag tag-pink tag-big tilt-r" href="#" data-link="registration" data-label="registrationLabel">Interesse anmelden</a>
       <p class="small">Oder folge uns auf <a href="https://www.instagram.com/mensasummit/" target="_blank" rel="noopener">Instagram @mensasummit</a>, dort gibt es alle Neuigkeiten zuerst.</p>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section" id="faq">
+  <section class="section section-alt" id="faq">
     <p class="eyebrow">FAQ</p>
-    <h2>Gute Fragen.</h2>
+    <h2>Gute <span class="w">Fragen.</span></h2>
     <div class="faq">
       <details>
         <summary>Muss ich mich mit Mensen oder Ernährung schon auskennen?</summary>
-        <p>Nein. Am ersten Tag gibt es Input für alle, und am zweiten Tag arbeitest du in kleinen Gruppen mit Leuten, die schon Erfahrung haben.</p>
+        <p>Nein. Am ersten Tag gibt es Inputs für alle, und am zweiten Tag arbeitest du in kleinen Gruppen mit Leuten, die schon Erfahrung haben.</p>
       </details>
       <details>
         <summary>Kann ich allein kommen?</summary>
@@ -293,13 +315,13 @@
       </details>
       <details>
         <summary>Wer steckt dahinter?</summary>
-        <p>Der Summit wird von der MENSArevolution, dem Green Office Konstanz und dem netzwerk n organisiert, ehrenamtlich und von Studierenden für Studierende.</p>
+        <p>Der Summit wird von der MENSArevolution, dem Green Office Konstanz und dem netzwerk n organisiert, ehrenamtlich und von Studierenden für Studierende. <a href="#orga">Mach mit im Orga-Team.</a></p>
       </details>
     </div>
   </section>
 
   <!-- VERANSTALTER -->
-  <section class="section section-tint organisers" id="veranstalter">
+  <section class="section organisers" id="veranstalter">
     <p class="eyebrow">Veranstaltet von</p>
     <div class="org-row">
       <a class="org" href="https://mensarevolution.de" target="_blank" rel="noopener">
@@ -315,16 +337,16 @@
         <span>Dachverband für Nachhaltigkeitsinitiativen an Hochschulen</span>
       </a>
     </div>
-    <p class="center small">Lust auf mehr Mensa-Aktivismus? Schau dir den <a href="https://mensarevolution.de/forderungen" target="_blank" rel="noopener">Forderungskatalog der MENSArevolution</a> an.</p>
+    <p class="small center">Lust auf mehr Mensa-Aktivismus? Schau dir den <a href="https://mensarevolution.de/forderungen" target="_blank" rel="noopener">Forderungskatalog der MENSArevolution</a> an.</p>
   </section>
 
 </main>
 
 <footer class="footer">
   <div class="footer-inner">
-    <div>
-      <p class="brand-text brand-footer">Mensa<b>Summit</b><small>2027</small></p>
-      <p>14.–15. Mai 2027 · Konstanz</p>
+    <div class="footer-brand">
+      <img src="assets/logo-mensa-summit.png" alt="Mensa Summit" width="150" height="53" loading="lazy">
+      <p>Der bundesweite studentische Treffpunkt für nachhaltige Mensen<br>14. &amp; 15. Mai 2027 · Konstanz</p>
     </div>
     <div class="footer-links">
       <a href="#" data-link="contactMail">Kontakt</a>
