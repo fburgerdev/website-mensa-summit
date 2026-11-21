@@ -116,17 +116,17 @@
   var bar = document.querySelector(".mobile-bar");
   var hero = document.querySelector(".hero");
   var signup = document.getElementById("anmelden");
-  if (bar && hero && signup && "IntersectionObserver" in window) {
-    var seen = { hero: true, signup: false };
-    var update = function () { bar.classList.toggle("show", !seen.hero && !seen.signup); };
-    new IntersectionObserver(function (en) {
-      en.forEach(function (e) { seen[e.target === hero ? "hero" : "signup"] = e.isIntersecting; });
-      update();
-    }, { threshold: 0 }).observe(hero);
-    new IntersectionObserver(function (en) {
-      en.forEach(function (e) { seen.signup = e.isIntersecting; });
-      update();
-    }, { threshold: 0 }).observe(signup);
+  if (bar && hero && signup) {
+    var update = function () {
+      var vh = window.innerHeight;
+      var heroGone = hero.getBoundingClientRect().bottom < 0;
+      var s = signup.getBoundingClientRect();
+      var atSignup = s.top < vh && s.bottom > 0;
+      bar.classList.toggle("show", heroGone && !atSignup);
+    };
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
   }
 
   // --- Reveal on scroll -------------------------------------------------------
