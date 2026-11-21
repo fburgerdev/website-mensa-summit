@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
@@ -12,8 +12,10 @@
   <meta property="og:image" content="https://fburgerdev.github.io/website-mensa-summit/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#162b2e">
-  <link rel="icon" href="assets/icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="assets/fonts/comfortaa-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -36,7 +38,7 @@
 
 <header class="nav" id="top">
   <a class="brand" href="#top" aria-label="Mensa Summit 2027, zum Seitenanfang">
-    <img src="assets/logo-mensa-summit.png" alt="Mensa Summit" width="120" height="43">
+    <img src="assets/logo-mensa-summit.svg" alt="Mensa Summit" width="120" height="41">
   </a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
     <span></span><span></span><span></span>
@@ -65,7 +67,7 @@
 
     <div class="hero-inner">
       <span class="tag tag-orange tilt-r hero-tag-1">Vernetzung</span>
-      <h1 class="hero-logo"><img src="assets/logo-mensa-summit.png" alt="Mensa Summit" width="702" height="238"></h1>
+      <h1 class="hero-logo"><img src="assets/logo-mensa-summit.svg" alt="Mensa Summit" width="704" height="241"></h1>
       <p class="hero-date">14. &amp; 15. Mai 2027</p>
       <p class="hero-place"><svg class="pin" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 0C5 0 0 5 0 12c0 9 12 20 12 20s12-11 12-20C24 5 19 0 12 0zm0 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>Konstanz</p>
       <p class="hero-lead"><span class="m">Wir bringen</span> Studierende <span class="m">aus ganz Deutschland zusammen, die sich für</span> nachhaltige Mensen <span class="m">einsetzen.</span></p>
@@ -127,6 +129,7 @@
       <article class="card"><span class="card-num">03</span><h3>Gremien der Studierenden&shy;werke</h3><p>Studentische Mitglieder in Verwaltungsrat und Vertreterversammlung.</p></article>
       <article class="card"><span class="card-num">04</span><h3>Green Offices &amp; Initiativen</h3><p>Nachhaltigkeitsbüros und alle, die an ihrer Hochschule anpacken.</p></article>
     </div>
+    <p class="swipe-hint" aria-hidden="true">Wischen für mehr →</p>
     <p class="note">Kein Vorwissen nötig. Komm allein, zu zweit oder mit deiner ganzen Gruppe.</p>
   </section>
 
@@ -190,7 +193,7 @@
       <p class="orga-lead">Der Summit wird von Studierenden für Studierende organisiert. Programm, Homestay, Kommunikation, Finanzen: Es gibt für alle etwas zu tun, und neue Leute sind jederzeit willkommen.</p>
       <p class="orga-next">Nächstes Orga-Treffen</p>
       <p class="tag tag-pink tag-big tilt-l" data-orga-meeting>07. Dezember 2026 · 19 Uhr · online</p>
-      <p><a class="tag tag-dark tilt-r" href="https://www.instagram.com/mensasummit/" target="_blank" rel="noopener">Gruppenlink in unserer Instagram-Bio</a></p>
+      <p><a class="tag tag-dark tilt-r" href="https://www.instagram.com/mensasummit/" target="_blank" rel="noopener">Gruppenlink in Bio</a></p>
     </div>
   </section>
 
@@ -224,6 +227,7 @@
         <a class="link-arrow" href="#" data-link="partners">Kontakt aufnehmen</a>
       </article>
     </div>
+    <p class="swipe-hint" aria-hidden="true">Wischen für mehr →</p>
   </section>
 
   <!-- HOMESTAY -->
@@ -269,6 +273,7 @@
         <p>Den genauen Ort in Konstanz geben wir mit dem Detailprogramm bekannt.</p>
       </article>
     </div>
+    <p class="swipe-hint" aria-hidden="true">Wischen für mehr →</p>
   </section>
 
   <!-- ANMELDEN -->
@@ -280,6 +285,10 @@
       <h2>Sei dabei :)</h2>
       <p class="lead" data-text="registrationNote">Die Anmeldung öffnet bald. Schreib uns kurz, dann sagen wir dir Bescheid, sobald es losgeht.</p>
       <a class="tag tag-pink tag-big tilt-r" href="#" data-link="registration" data-label="registrationLabel">Interesse anmelden</a>
+      <div class="signup-more">
+        <button class="btn-line" type="button" data-share>Mit deiner Gruppe teilen</button>
+        <a class="btn-line" href="assets/mensa-summit-2027.ics" download>In den Kalender</a>
+      </div>
       <p class="small">Oder folge uns auf <a href="https://www.instagram.com/mensasummit/" target="_blank" rel="noopener">Instagram @mensasummit</a>, dort gibt es alle Neuigkeiten zuerst.</p>
     </div>
   </section>
@@ -345,7 +354,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="assets/logo-mensa-summit.png" alt="Mensa Summit" width="150" height="53" loading="lazy">
+      <img src="assets/logo-mensa-summit.svg" alt="Mensa Summit" width="150" height="51" loading="lazy">
       <p>Der bundesweite studentische Treffpunkt für nachhaltige Mensen<br>14. &amp; 15. Mai 2027 · Konstanz</p>
     </div>
     <div class="footer-links">
@@ -355,6 +364,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Phones: a bar at the bottom once the hero is out of view -->
+<div class="mobile-bar" aria-hidden="true">
+  <a class="tag tag-mint" href="#anmelden" data-link="registration" tabindex="-1">Sei dabei :)</a>
+  <button class="mobile-share" type="button" data-share tabindex="-1" aria-label="Seite teilen">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7l-6.7 3.4a3 3 0 1 0 0 3.2L15 17a3 3 0 1 0 3-1z"/></svg>
+  </button>
+</div>
+<p class="toast" role="status" aria-live="polite"></p>
 
 <script src="config.js"></script>
 <script src="script.js"></script>

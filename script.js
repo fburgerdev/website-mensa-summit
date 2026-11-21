@@ -86,6 +86,49 @@
     });
   }
 
+  // --- Share: the phone's share sheet, else copy the link ----------------------
+  var toast = document.querySelector(".toast");
+  var toastTimer;
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove("show"); }, 2600);
+  }
+  var shareUrl = cfg.siteUrl || location.href.split("#")[0];
+  var shareText = "Mensa Summit 2027, 14. & 15. Mai in Konstanz: der bundesweite studentische Treffpunkt für nachhaltige Mensen. Sei dabei :)";
+  document.querySelectorAll("[data-share]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      if (navigator.share) {
+        navigator.share({ title: "Mensa Summit 2027", text: shareText, url: shareUrl }).catch(function () {});
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(shareText + " " + shareUrl).then(function () {
+          say("Link kopiert. Ab damit in eure Gruppe!");
+        }, function () { window.open("https://wa.me/?text=" + encodeURIComponent(shareText + " " + shareUrl), "_blank"); });
+      } else {
+        window.open("https://wa.me/?text=" + encodeURIComponent(shareText + " " + shareUrl), "_blank");
+      }
+    });
+  });
+
+  // --- Phones: bottom bar once the hero is gone, hidden at the signup ----------
+  var bar = document.querySelector(".mobile-bar");
+  var hero = document.querySelector(".hero");
+  var signup = document.getElementById("anmelden");
+  if (bar && hero && signup) {
+    var update = function () {
+      var vh = window.innerHeight;
+      var heroGone = hero.getBoundingClientRect().bottom < 0;
+      var s = signup.getBoundingClientRect();
+      var atSignup = s.top < vh && s.bottom > 0;
+      bar.classList.toggle("show", heroGone && !atSignup);
+    };
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
+
   // --- Reveal on scroll -------------------------------------------------------
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var io = new IntersectionObserver(function (entries) {

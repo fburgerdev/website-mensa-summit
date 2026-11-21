@@ -4,6 +4,9 @@
  * Leave a value as "" to fall back to a prepared mail to `contactMail`.
  */
 window.SUMMIT_CONFIG = {
+  // Address shared by the "teilen" buttons.
+  siteUrl: "https://fburgerdev.github.io/website-mensa-summit/",
+
   // Contact address for everything.
   contactMail: "info@mensarevolution.de",
 
