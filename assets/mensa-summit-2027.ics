@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mensa Summit//Website//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mensa-summit-2027@mensasummit
+DTSTAMP:20261121T120000Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270516
+SUMMARY:Mensa Summit 2027
+LOCATION:Konstanz
+DESCRIPTION:Zwei Tage für nachhaltige Hochschulgastronomie: Input\, Best Practices und Vernetzung am 14.05.\, konkrete Pläne für die eigene Mensa am 15.05. Anreise 13.05.\, Abreise 16.05. Infos: instagram.com/mensasummit
+END:VEVENT
+END:VCALENDAR
